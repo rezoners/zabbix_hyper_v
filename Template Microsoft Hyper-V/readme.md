@@ -12,6 +12,7 @@ You can analyzing all performance data overall host and virtual machines
 # Requirements
 Hyper-V: Windows server 2008 R2 or higher  
 PowerShell 3  
+Zabbix Agent must be installed in active mode
 
 # How install
 1. Import the template XML file using the Zabbix Templates Import feature.
@@ -27,7 +28,7 @@ hyperv_host.conf to \zabbix_agentd\
 
 4. Add lines to zabbix.conf
 
-Include=C:\Program Files\zabbix-agent\zabbix_agentd\\*.conf  
+Include=C:\Program Files\zabbix agent\zabbix_agentd\\*.conf  
 UnsafeUserParameters=1  
 Timeout=10  
 
